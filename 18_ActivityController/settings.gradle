@@ -1,0 +1,2 @@
+rootProject.name='ActivityController'
+include ':app'
