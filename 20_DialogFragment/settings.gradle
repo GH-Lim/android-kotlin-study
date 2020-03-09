@@ -1,0 +1,2 @@
+rootProject.name='DialogFragment'
+include ':app'
