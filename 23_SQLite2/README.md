@@ -1,3 +1,15 @@
+### 제공되는 클래스
+
+- 안드로이드는 SQLite를 사용할 때 표준 SQL 쿼리문 대신 사용할 수 있는 클래스를 제공하고 있다.
+- 클래스를 이용하는 방법과 SQL문을 사용하는 방법 중 편한 방법을 사용한다.
+
+
+
+```
+이전 강의와 같은 파일에 덮어썼음!
+```
+
+```kotlin
 package com.example.sqlite1
 
 import android.content.ContentValues
@@ -141,3 +153,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
+```
+
