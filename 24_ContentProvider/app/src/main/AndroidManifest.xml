@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.contentprovider">
+    <uses-permission android:name="com.example.sqlite1.READ_DATABASE" />
+    <uses-permission android:name="com.example.sqlite1.WRITE_DATABASE" />
 
     <application
         android:allowBackup="true"

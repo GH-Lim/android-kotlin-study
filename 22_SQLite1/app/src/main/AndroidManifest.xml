@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sqlite1">
-    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
-    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <permission android:name="com.example.sqlite1.READ_DATABASE" android:protectionLevel="normal" />
+    <permission android:name="com.example.sqlite1.WRITE_DATABASE" android:protectionLevel="normal" />
 
     <application
         android:allowBackup="true"
@@ -14,8 +14,10 @@
         <provider
             android:name=".TestProvider"
             android:authorities="com.example.dbprovider"
+            android:readPermission="com.example.sqlite1.READ_DATABASE"
+            android:writePermission="com.company.sqlite1.WRITE_DATABASE"
             android:enabled="true"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity android:name=".MainActivity">
             <intent-filter>

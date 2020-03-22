@@ -21,7 +21,7 @@ class TestProvider : ContentProvider() {
     }
 
     override fun onCreate(): Boolean {
-        throw UnsupportedOperationException("Not yet implemented")
+        return false
     }
 
     override fun query(
