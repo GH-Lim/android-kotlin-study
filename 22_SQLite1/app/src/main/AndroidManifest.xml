@@ -15,7 +15,7 @@
             android:name=".TestProvider"
             android:authorities="com.example.dbprovider"
             android:readPermission="com.example.sqlite1.READ_DATABASE"
-            android:writePermission="com.company.sqlite1.WRITE_DATABASE"
+            android:writePermission="com.example.sqlite1.WRITE_DATABASE"
             android:enabled="true"
             android:exported="true" />
 

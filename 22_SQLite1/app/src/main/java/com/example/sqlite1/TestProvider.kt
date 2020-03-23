@@ -9,7 +9,10 @@ import java.lang.UnsupportedOperationException
 class TestProvider : ContentProvider() {
 
     override fun delete(uri: Uri, selection: String?, selectionArgs: Array<String>?): Int {
-        throw UnsupportedOperationException("Not yet implemented")
+        var helper = context?.let { DBHelper(it) }
+        var db = helper!!.writableDatabase
+
+        return db.delete("TestTable", selection, selectionArgs)
     }
 
     override fun getType(uri: Uri): String? {
@@ -17,7 +20,12 @@ class TestProvider : ContentProvider() {
     }
 
     override fun insert(uri: Uri, values: ContentValues?): Uri? {
-        throw UnsupportedOperationException("Not yet implemented")
+        var helper = context?.let { DBHelper(it) }
+        var db = helper!!.writableDatabase
+
+        db.insert("TestTable", null, values)
+
+        return uri
     }
 
     override fun onCreate(): Boolean {
@@ -28,7 +36,6 @@ class TestProvider : ContentProvider() {
         uri: Uri, projection: Array<String>?, selection: String?,
         selectionArgs: Array<String>?, sortOrder: String?
     ): Cursor? {
-        // TODO("Implement this to handle query requests from clients.")
         var helper = context?.let { DBHelper(it) }
         var db = helper!!.writableDatabase
 
@@ -40,6 +47,9 @@ class TestProvider : ContentProvider() {
         uri: Uri, values: ContentValues?, selection: String?,
         selectionArgs: Array<String>?
     ): Int {
-        throw UnsupportedOperationException("Not yet implemented")
+        var helper = context?.let { DBHelper(it) }
+        var db = helper!!.writableDatabase
+
+        return db.update("TestTable", values, selection, selectionArgs)
     }
 }
