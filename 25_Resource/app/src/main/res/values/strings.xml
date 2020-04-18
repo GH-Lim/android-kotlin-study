@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">25_Resource</string>
+    <string name="str1">안녕하세요</string>
+    <string name="str2">반갑습니다</string>
+</resources>
