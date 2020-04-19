@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="px">1px</dimen>
+    <dimen name="inch">1in</dimen>
+    <dimen name="mm">1mm</dimen>
+    <dimen name="pt">1pt</dimen>
+    <dimen name="dp">1dp</dimen>
+    <dimen name="sp">1sp</dimen>
+</resources>

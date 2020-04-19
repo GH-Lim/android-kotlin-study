@@ -20,4 +20,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="문자열 리소스" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="문자열배열" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="색상관리" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="크기" />
 </LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data_array">
+        <item>항목1</item>
+        <item>항목2</item>
+        <item>항목3</item>
+        <item>항목4</item>
+        <item>항목5</item>
+        <item>항목6</item>
+        <item>항목7</item>
+        <item>항목8</item>
+        <item>항목9</item>
+        <item>항목10</item>
+    </string-array>
+</resources>
